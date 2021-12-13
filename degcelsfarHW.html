@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p1 id="temps1">temps1</p1>
+  <p2 id="temps2">temps2</p2>
+
+    <script>
+      function celsiusToFarenheit(dcelsius) 
+     {
+       const dfarenh = ( dcelsius *(9/5) +32);
+       return dfarenh;
+     }
+      //  console.log( dcelsius + ' is ' + dfarenh + ' degrees F');}
+
+     function farenheitToCelsius(X) 
+     {
+        const dcelsius=((9/5) * X - 32); 
+        return dcelsius;
+        
+        // console.log(dfarenh  + ' is ' + dcelsius + ' degrees C');
+     } 
+    let degrees1=celsiusToFarenheit(32)
+    let degrees2=farenheitToCelsius(65)
+          
+document.getElementById('temps1').innerHTML=32 +' deg Celsius is equal ' + degrees1 + ' deg Farenheit'
+document.getElementById('temps2').innerHTML= 65 + ' deg Farenheit is equal ' + degrees2 + 'deg Celsius'
+
+        </script>
+    
+</body>
+</html>

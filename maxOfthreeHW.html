@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <p id="result1">result1</p>
+    <script >
+function maxOfThree(num1=10, num2=200, num3=40) {
+    if ((num1 >= num2) && (num1 >= num3)) { 
+        return  num1;
+    } else if ((num2 >= num1) && (num2 >= num3)) {
+        return num2;
+    } else {
+        return num3;
+    }
+}
+let largest= maxOfThree(10,200,40)
+document.getElementById('result1').innerHTML=largest
+// console.log(maxOfThree());
+
+
+    </script>
+</body>
+</html>            
